@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "lint": "eslint \"**/*.js\"",
+    "start": "electron .",
     "test": "npm run test:coverage && npm run lint",
     "test:coverage": "nyc --reporter=lcov mocha && nyc report",
     "test:dev": "mocha ./test --watch"
@@ -14,11 +15,10 @@
     "url": ""
   },
   "license": "MIT",
-  "dependencies": {
-    "yargs": "^12.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "chai": "^4.1.2",
+    "electron": "^8.0.1",
     "eslint": "^5.3.0",
     "mocha": "^5.2.0",
     "nyc": "^13.0.1"
