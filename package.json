@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "lint": "eslint \"**/*.js\"",
-    "start": "electron .",
+    "start": "electron src/",
     "test": "npm run test:coverage && npm run lint",
     "test:coverage": "nyc --reporter=lcov mocha && nyc report",
     "test:dev": "mocha ./test --watch"
